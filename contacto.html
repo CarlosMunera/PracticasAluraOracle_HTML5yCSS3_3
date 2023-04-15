@@ -25,51 +25,48 @@
     <main>
         <form action="" method="post">
             <label for="nombreapellido">Nombre y apellido</label>
-            <input id="nombreapellido" type="text" class="input-padron">
+            <input id="nombreapellido" type="text" class="input-padron" required placeholder="Tu nombre y apellido">
 
             <label for="correoelectronico">Correo Electrónico</label>
-            <input id="correoelectronico" type="text" class="input-padron">
+            <input id="correoelectronico" type="email" class="input-padron" required placeholder="email@dominio.com">
 
             <label for="telefono">Teléfono</label>
-            <input id="telefono" type="text" class="input-padron">
+            <input id="telefono" type="number" class="input-padron" required placeholder="604xxxxxxx">
             <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="" id="" cols="70" rows="10" class="input-padron"></textarea>
+            <textarea id="mensaje" name="" id="" cols="70" rows="10" class="input-padron" required placeholder="Tu mensaje..."></textarea>
 
-            <div>
-                <p>Como le gustaría que lo contactemos?</p>
+            <fieldset>
+                <legend>¿Como le gustaría que lo contactemos?</legend>
 
                 <label for="radio-email">
                     <input type="radio" name="contacto" value="email" id="radio-email">
                      Email
                 </label>
 
-
                 <label for="radio-telefono">
                     <input type="radio" name="" value="telefono" id="radio-telefono">
                      Teléfono
                 </label>
 
-
                 <label for="radio-whatsapp">
-                    <input type="radio" name="" value="whatsapp" id="radio-whatsapp">
+                    <input type="radio" name="" value="whatsapp" id="radio-whatsapp" checked>
                      WhatsApp
                 </label>
+            </fieldset>
 
-            </div>
-
-            <div>
-                <p>En cual horario prefiere ser atendido?</p>
+            <fieldset>
+                <legend>¿En cual horario prefiere ser atendido?</legend>
                 <select name="" id="">
                     <option value="">Mañana</option>
                     <option value="">Tarde</option>
                     <option value="">Noche</option>
                 </select>
-            </div>
+            </fieldset>
 
 
             <label class="checkbox" for="">
-                <input type="checkbox">
-                Le gustaría recibir novedades de la Barbería Alura?
+                <input type="checkbox" checked>
+                ¿Le gustaría recibir novedades de la Barbería Alura?
             </label>
 
 
